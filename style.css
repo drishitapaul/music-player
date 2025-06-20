@@ -1,0 +1,97 @@
+:root {
+  --tea-rose: #e2c2c6;
+  --rosy-brown: #b9929f;
+  --plum: #9c528b;
+  --indigo: #610f7f;
+  --violet: #2f0147;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: url('./assets/Background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-box {
+  background: rgba(185, 146, 159, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 24px;
+  text-align: center;
+  color: var(--tea-rose);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+.player-box h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cover-art {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 1rem 0;
+}
+
+.controls svg {
+  width: 35px;
+  height: 35px;
+  fill: var(--plum);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.controls svg:hover {
+  fill: var(--indigo);
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 4px var(--plum));
+}
+
+#play-pause {
+  cursor: pointer;
+}
+
+#time-display {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.9rem;
+  color: var(--tea-rose);
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 1rem;
+  accent-color: var(--indigo);
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+#volume-icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--plum);
+  cursor: default;
+}
